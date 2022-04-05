@@ -7,10 +7,7 @@ namespace APICatalogo.Models;
 [Table("Categorias")]
 public class Categoria
 {
-    public Categoria()
-    {
-        Produtos = new Collection<Produto>();
-    }
+    public Categoria()=> Produtos = new Collection<Produto>();
     [Key]
     public int CategoriaId { get; set; }
     [Required]
