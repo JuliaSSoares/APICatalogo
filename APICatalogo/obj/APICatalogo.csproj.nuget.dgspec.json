@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\ApiCatalogo\\APICatalogo.csproj": {}
+    "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\ApiCatalogo\\APICatalogo.csproj": {
+    "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\APICatalogo\\APICatalogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\ApiCatalogo\\APICatalogo.csproj",
+        "projectUniqueName": "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "projectName": "APICatalogo",
-        "projectPath": "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\ApiCatalogo\\APICatalogo.csproj",
+        "projectPath": "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\APICatalogo\\APICatalogo.csproj",
         "packagesPath": "C:\\Users\\Carol Fernandes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\ApiCatalogo\\obj\\",
+        "outputPath": "C:\\Users\\Carol Fernandes\\Documents\\Estudando Programação\\ASP.Net\\APICatalogo\\APICatalogo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,20 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.2, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
