@@ -1,5 +1,6 @@
 using APICatalogo.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
+
 
 string mySqlConnection = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -22,8 +28,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler();
+}
 
-app.UseHttpsRedirection();
+    app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
